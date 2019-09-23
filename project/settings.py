@@ -25,8 +25,8 @@ SECRET_KEY = 'hez!4$gi5z$)e9_z%0rzas$s_*s!^op^tec8ihfao)pmtotaox'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#ALLOWED_HOSTS = ['127.0.0.1']
 ALLOWED_HOSTS = []
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -166,19 +166,19 @@ EMAIL_HOST_PASSWORD = os.environ['SENDGRID_PASSWORD']
 EMAIL_HOST_USER = os.environ['SENDGRID_USERNAME']
 
 # Production
-# ENVIRONMENT = os.environ['ENVIRONMENT']
-#
-# if ENVIRONMENT == 'production':
-#     SECURE_BROWSER_XSS_FILTER = True
-#     X_FRAME_OPTIONS = 'DENY'
-#     SECURE_SSL_REDIRECT = True
-#     SECURE_HSTS_SECONDS = True
-#     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-#     SECURE_HSTS_PRELOAD = True
-#     SECURE_CONTENT_TYPE_NOSNIFF = True
-#     SESSION_COOKIE_SECURE = True
-#     CSRF_COOKIE_SECURE = True
-#     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+ENVIRONMENT = os.environ['ENVIRONMENT']
+
+if ENVIRONMENT == 'production':
+    SECURE_BROWSER_XSS_FILTER = True
+    X_FRAME_OPTIONS = 'DENY'
+    SECURE_SSL_REDIRECT = True
+    SECURE_HSTS_SECONDS = True
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
