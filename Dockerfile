@@ -11,7 +11,7 @@ WORKDIR /code
 # Install dependencies
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
-# pipenv && pipenv install --system
+    pipenv && pipenv install --system
 
 # Copy project
 COPY . /code/
