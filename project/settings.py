@@ -23,7 +23,7 @@ SECRET_KEY = 'hez!4$gi5z$)e9_z%0rzas$s_*s!^op^tec8ihfao)pmtotaox'
 # SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 1
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'allauth',
     'allauth.account',
+    'debug_toolbar',
     # Local
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
@@ -55,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -162,3 +164,27 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = os.environ['SENDGRID_PASSWORD']
 EMAIL_HOST_USER = os.environ['SENDGRID_USERNAME']
+
+# Production
+# ENVIRONMENT = os.environ['ENVIRONMENT']
+#
+# if ENVIRONMENT == 'production':
+#     SECURE_BROWSER_XSS_FILTER = True
+#     X_FRAME_OPTIONS = 'DENY'
+#     SECURE_SSL_REDIRECT = True
+#     SECURE_HSTS_SECONDS = True
+#     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+#     SECURE_HSTS_PRELOAD = True
+#     SECURE_CONTENT_TYPE_NOSNIFF = True
+#     SESSION_COOKIE_SECURE = True
+#     CSRF_COOKIE_SECURE = True
+#     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Django-debug-toolbar
+# import socket
+#
+# hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+INTERNAL_IPS = ['127.0.0.1'] # [ip[:-1] + "1" for ip in ips]
