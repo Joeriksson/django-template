@@ -12,6 +12,7 @@ Django = "==2.2.5"
 django-crispy-forms = "*"
 django-allauth = "*"
 django-debug-toolbar = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.7"

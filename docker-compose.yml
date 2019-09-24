@@ -2,13 +2,13 @@ version: '3.7'
 
 services:
   web:
+    env_file:
+      - .env
     build: .
     command: python /code/manage.py runserver 0.0.0.0:8000
     # command: gunicorn bookstore_project.wsgi -b 0.0.0.0:8000
-    environment:
-      - ENVIRONMENT=development
-      - SECRET_KEY=hez!4$$gi5z$$)e9_z%0rzas$$s_*s!^op^tec8ihfao)pmtotaox
-      - DEBUG=1
+#    environment:
+#      - ENVIRONMENT=development
     volumes:
       - .:/code
     ports:
