@@ -6,9 +6,11 @@
     <h1>Homepage</h1>
     {% if user.is_authenticated %}
         Hi {{ user.email }}!
-        <a href="{% url 'account_logout' %}">Logout</a>
+        <p><a href="{% url 'account_logout' %}">Logout</a></p>
     {% else %}
         <p>You are not logged in</p>
-        <a href="{% url 'account_login' %}">Login</a>
+        <p><a href="{% url 'account_login' %}">Login</a></p>
     {% endif %}
+
+
 {% endblock content %}
