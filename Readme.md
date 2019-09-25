@@ -8,6 +8,7 @@ A project template to use with Django projects. Includes:
 - e-mail verification
 - django debug toolbar
 - docker files for spinning up containers (python and postgresql)
+- basic tests for pages and users
 
 The biggest part of this project is inspired by the ["Django for professionals"](https://djangoforprofessionals.com) book, and built on what I learned going through its chapters. My thought was to have something to use as a base when building my own Django apps.
 
