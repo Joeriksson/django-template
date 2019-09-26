@@ -80,3 +80,9 @@ EMAIL_HOST_USER = os.environ['SENDGRID_USERNAME']
 ## Django debug toolbar
 
 As long as DEBUG (currently read from the .env file) is true, the Django debug toolbar will be visible in the web app. This is set with an if statement in the project/urls.py.
+
+## Known Issues
+
+I haven't yet got the test for the EditProfile to work. Will spend more time on it further on.
+
+https://github.com/Joeriksson/django-template/issues/1
