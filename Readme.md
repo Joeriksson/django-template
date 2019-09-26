@@ -10,7 +10,7 @@ A project template to use with Django projects. Includes:
 - docker files for spinning up containers (python and postgresql)
 - basic tests for pages and users
 
-The biggest part of this project is inspired by the ["Django for professionals"](https://djangoforprofessionals.com) book, and built on what I learned going through its chapters. My thought was to have something to use as a base when building my own Django apps.
+The biggest part of this project I got from the ["Django for professionals"](https://djangoforprofessionals.com) book, and built on what I learned going through its chapters. My thought was to have something to use as a base when building my own Django apps.
 
 I could have used the [DjangoX](https://github.com/wsvincent/djangox) repo to get a ready made template. But I wanted to build it my self and choose what should be in it. Also I've built this to learn Django better myself.  
 
