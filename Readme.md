@@ -48,7 +48,7 @@ DEBUG=True
   
 5. Restart the container and rebuild it:
 
-  ´make dev_build` 
+  `make dev_build` 
   
   Then check in you browser that you see a start web page at `http://127.0.0.1:8080`
 
