@@ -40,15 +40,25 @@ DEBUG=True
 
 `make dev_build`
 
-4. The container should now be up and running. Check in you browser that you see a start web page at `http://127.0.0.1:8080`
+4. The container should now be up and running. Run:
+
+  `make dev_web_exec cmd='pipenv install'`
+  
+  To install the dependencies. 
+  
+5. Restart the container and rebuild it:
+
+  ´make dev_build` 
+  
+  Then check in you browser that you see a start web page at `http://127.0.0.1:8080`
 
 5. Run a migration to build the databases
 
-`make dev_web_exec cmd='python manage.py migrate'`
+  `make dev_web_exec cmd='python manage.py migrate'`
 
 6. Create a Django super user to log in to the admin
 
-`make dev_web_exec cmd='python manage.py createsuperuser'`
+  `make dev_web_exec cmd='python manage.py createsuperuser'`
 
 7. Goto `http://127.0.0.1:8080/admin` and login with the super user account you just created.
 
@@ -56,7 +66,7 @@ DEBUG=True
 
 If you want to stop the container run:
 
-`make dev_down`
+  `make dev_down`
 
 
 
