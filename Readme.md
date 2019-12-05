@@ -69,9 +69,3 @@ If you want to stop the container run:
   `make dev_down`
 
 
-
-## Known Issues
-
-I haven't yet got the test for the EditProfile to work. Will spend more time on it further on.
-
-https://github.com/Joeriksson/django-template/issues/1
