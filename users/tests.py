@@ -58,10 +58,13 @@ class EditProfilePageTests(TestCase):
     lastname = 'user'
 
     def setUp(self):
-        User = get_user_model()
-        userid = User.objects.get(username='julle')
-        print(userid)
-        url = reverse('user_edit', args=(userid,))
+        user = get_user_model()
+        self.user = user.objects.create_user(
+            username='julle',
+            email="test2@test.com",
+            password='testpass123'
+        )
+        url = reverse('user_edit', args=(self.user.id,))
         self.response = self.client.get(url)
 
     def test_userprofile_template(self):
