@@ -50,7 +50,7 @@ DEBUG=True
 
   `make dev_build` 
   
-  Then check in you browser that you see a start web page at `http://127.0.0.1:8080`
+  Then check in you browser that you see a start web page at `http://127.0.0.1:8000`
 
 5. Run a migration to build the databases
 
@@ -60,7 +60,7 @@ DEBUG=True
 
   `make dev_web_exec cmd='python manage.py createsuperuser'`
 
-7. Goto `http://127.0.0.1:8080/admin` and login with the super user account you just created.
+7. Goto `http://127.0.0.1:8000/admin` and login with the super user account you just created.
 
 8. Go on and build you app.
 
