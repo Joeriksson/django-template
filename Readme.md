@@ -42,13 +42,13 @@ The setting file are split up in production and a development settings files. Al
 
 5. Run a migration to build the databases
 
-  `make dev_web_exec cmd='python manage.py migrate'`
-  
-  Then check in you browser that you see a start web page at `http://127.0.0.1:8000`
+    `make dev_web_exec cmd='python manage.py migrate'`
+    
+    Then check in you browser that you see a start web page at `http://127.0.0.1:8000`
 
 6. Create a Django super user to log in to the admin
 
-  `make dev_web_exec cmd='python manage.py createsuperuser'`
+    `make dev_web_exec cmd='python manage.py createsuperuser'`
 
 7. Goto `http://127.0.0.1:8000/admin` and login with the super user account you just created.
 
