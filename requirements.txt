@@ -1,0 +1,8 @@
+django-allauth==0.41.0
+django-crispy-forms==1.8.1
+django-debug-toolbar==2.1
+django==2.2.9
+psycopg2-binary==2.8.4
+pytz==2019.2
+sqlparse==0.3.0
+
