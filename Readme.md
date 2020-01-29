@@ -29,32 +29,22 @@ The setting file are split up in production and a development settings files. Al
 
 3. Create an .env file in the root folder with the the following parameters:
 
-```ENVIRONMENT='development'
-SENDGRID_PASSWORD=<you sendgrid password>
-SENDGRID_USERNAME=<your sendgrid username>
-SECRET_KEY=<your secret key>
-DEBUG=True
-```
+    ```ENVIRONMENT='development'
+    SENDGRID_PASSWORD=<you sendgrid password>
+    SENDGRID_USERNAME=<your sendgrid username>
+    SECRET_KEY=<your secret key>
+    DEBUG=True
+    ```
 
-3. In the directory where you cloned the repository, run the following command:
+4. In the directory where you cloned the repository, run the following command:
 
-`make dev_build`
-
-4. The container should now be up and running. Run:
-
-  `make dev_web_exec cmd='pipenv install'`
-  
-  To install the dependencies. 
-  
-5. Restart the container and rebuild it:
-
-  `make dev_build` 
-  
-  Then check in you browser that you see a start web page at `http://127.0.0.1:8000`
+    `make dev_build`
 
 5. Run a migration to build the databases
 
   `make dev_web_exec cmd='python manage.py migrate'`
+  
+  Then check in you browser that you see a start web page at `http://127.0.0.1:8000`
 
 6. Create a Django super user to log in to the admin
 
