@@ -21,6 +21,8 @@ The setting file are split up in production and a development settings files. Al
 
 ## Quick start
 
+> Note: For a more detailed instruction how to use this template, see my blog post - [How to get started with my Django template](https://joeriksson.io/blog/how-to-get-started-with-my-django-template/)
+
 1. Clone this repository
 
 ` https://github.com/Joeriksson/django-template.git`
