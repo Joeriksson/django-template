@@ -12,7 +12,7 @@ db.sqlite3
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
-# <django-project-name>/staticfiles/
+# <django-core-name>/staticfiles/
 
 ### Django.Python Stack ###
 # Byte-compiled / optimized / DLL files
@@ -117,11 +117,11 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
+# Spyder core settings
 .spyderproject
 .spyproject
 
-# Rope project settings
+# Rope core settings
 .ropeproject
 
 # mkdocs documentation
@@ -180,9 +180,9 @@ dmypy.json
 
 # Environments
 
-# Spyder project settings
+# Spyder core settings
 
-# Rope project settings
+# Rope core settings
 
 # mkdocs documentation
 
@@ -250,7 +250,7 @@ cmake-build-*/
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
-# File-based project format
+# File-based core format
 *.iws
 
 # IntelliJ

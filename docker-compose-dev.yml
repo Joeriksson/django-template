@@ -5,7 +5,7 @@ services:
     env_file:
       - .env
     build: .
-    command: python /code/manage.py runserver 0.0.0.0:8000 --settings=project.settings.development
+    command: python /code/manage.py runserver 0.0.0.0:8000 --settings=core.settings.development
     volumes:
       - .:/code
     ports:

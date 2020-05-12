@@ -15,5 +15,5 @@ COPY requirements.txt /code/
 RUN python -m pip install --upgrade pip
 RUN python -m pip install -r requirements.txt
 
-# Copy project
+# Copy core
 COPY . /code/
