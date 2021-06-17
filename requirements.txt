@@ -2,5 +2,5 @@ django==3.2
 django-allauth==0.44.0
 django-crispy-forms==1.11.2
 django-debug-toolbar==3.2.1
-psycopg2-binary==2.8.6
+psycopg2-binary==2.9
 requests==2.25.1
