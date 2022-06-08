@@ -21,7 +21,7 @@ django==4.0.5
     #   -r requirements.in
     #   django-allauth
     #   django-debug-toolbar
-django-allauth==0.50.0
+django-allauth==0.51.0
     # via -r requirements.in
 django-crispy-forms==1.14.0
     # via -r requirements.in
