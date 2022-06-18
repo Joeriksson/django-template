@@ -6,7 +6,7 @@
 #
 asgiref==3.5.2
     # via django
-certifi==2021.10.8
+certifi==2022.5.18.1
     # via requests
 cffi==1.15.0
     # via cryptography
@@ -21,7 +21,7 @@ django==4.0.5
     #   -r requirements.in
     #   django-allauth
     #   django-debug-toolbar
-django-allauth==0.50.0
+django-allauth==0.51.0
     # via -r requirements.in
 django-crispy-forms==1.14.0
     # via -r requirements.in
