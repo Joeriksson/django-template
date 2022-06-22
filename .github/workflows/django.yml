@@ -8,6 +8,9 @@ on:
 
 env:
   ENVIRONMENT: CI
+  SENDGRID_PASSWORD: x
+  SENDGRID_USERNAME: x
+  SECRET_KEY: 1234
 
 jobs:
   build:
