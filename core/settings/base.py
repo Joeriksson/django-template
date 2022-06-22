@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-if os.environ.get('SECRET_KEY') == "CI":
+if os.environ.get('ENVIRONMENT') == "CI":
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
