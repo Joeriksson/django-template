@@ -1,5 +1,8 @@
 # Django Template
 
+![django test workflow](https://github.com/joeriksson/django-template/actions/workflows/django.yml/badge.svg)
+
+
 A project template to use with Django projects. Includes:
 
 - pages app
