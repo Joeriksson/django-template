@@ -79,7 +79,7 @@ if os.environ.get('ENVIRONMENT') == "CI":
             'NAME': 'postgres',
             'USER': 'postgres',
             'PASSWORD': 'postgres',
-            'HOST': 'postgres',
+            'HOST': 'localhost',
             'PORT': 5432,
         }
     }
