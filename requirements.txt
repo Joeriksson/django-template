@@ -6,17 +6,17 @@
 #
 asgiref==3.5.2
     # via django
-certifi==2022.6.15
+certifi==2022.6.15.1
     # via requests
 cffi==1.15.1
     # via cryptography
 charset-normalizer==2.1.1
     # via requests
-cryptography==37.0.4
+cryptography==38.0.1
     # via pyjwt
 defusedxml==0.7.1
     # via python3-openid
-django==4.1
+django==4.1.1
     # via
     #   -r requirements.in
     #   django-allauth
@@ -29,7 +29,7 @@ django-debug-toolbar==3.4.0
     # via -r requirements.in
 idna==3.3
     # via requests
-oauthlib==3.2.0
+oauthlib==3.2.1
     # via requests-oauthlib
 psycopg2-binary==2.9.3
     # via -r requirements.in
