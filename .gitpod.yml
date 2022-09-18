@@ -1,10 +1,4 @@
 tasks:
-  - init: |
-      python -m venv venv
-      source venv/bin/activate
-      pip install --upgrade pip wheel setuptools
-      pip install -r requirements.txt
-      python manage.py migrate
 
   - name: Env variables
     env:
@@ -15,8 +9,8 @@ tasks:
       POSTGRES_HOST_AUTH_METHOD: trust
       
   - command: |
-      source venv/bin/activate
-      python manage.py runserver
+      make dev_build
+      make dev_web_exec cmd='python manage.py migrate'
   
 ports:
   - port: 8000
