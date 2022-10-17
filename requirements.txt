@@ -50,7 +50,7 @@ sqlparse==0.4.3
     # via
     #   django
     #   django-debug-toolbar
-types-cryptography==3.3.23
+types-cryptography==3.3.23.1
     # via pyjwt
 urllib3==1.26.12
     # via requests
