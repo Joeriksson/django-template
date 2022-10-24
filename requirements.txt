@@ -29,13 +29,13 @@ django-debug-toolbar==3.4.0
     # via -r requirements.in
 idna==3.4
     # via requests
-oauthlib==3.2.1
+oauthlib==3.2.2
     # via requests-oauthlib
 psycopg2-binary==2.9.4
     # via -r requirements.in
 pycparser==2.21
     # via cffi
-pyjwt[crypto]==2.5.0
+pyjwt[crypto]==2.6.0
     # via django-allauth
 python3-openid==3.2.0
     # via django-allauth
@@ -50,7 +50,5 @@ sqlparse==0.4.3
     # via
     #   django
     #   django-debug-toolbar
-types-cryptography==3.3.23.1
-    # via pyjwt
 urllib3==1.26.12
     # via requests
