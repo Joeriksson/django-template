@@ -16,12 +16,12 @@ cryptography==40.0.1
     # via pyjwt
 defusedxml==0.7.1
     # via python3-openid
-django==4.1.7
+django==4.1.8
     # via
     #   -r requirements.in
     #   django-allauth
     #   django-debug-toolbar
-django-allauth==0.51.0
+django-allauth==0.54.0
     # via -r requirements.in
 django-crispy-forms==1.14.0
     # via -r requirements.in
@@ -31,7 +31,7 @@ idna==3.4
     # via requests
 oauthlib==3.2.2
     # via requests-oauthlib
-psycopg2-binary==2.9.5
+psycopg2-binary==2.9.6
     # via -r requirements.in
 pycparser==2.21
     # via cffi
