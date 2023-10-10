@@ -31,7 +31,7 @@ idna==3.4
     # via requests
 oauthlib==3.2.2
     # via requests-oauthlib
-psycopg2-binary==2.9.8
+psycopg2-binary==2.9.9
     # via -r requirements.in
 pycparser==2.21
     # via cffi
@@ -52,5 +52,5 @@ sqlparse==0.4.4
     #   django-debug-toolbar
 typing-extensions==4.8.0
     # via asgiref
-urllib3==2.0.5
+urllib3==2.0.6
     # via requests
