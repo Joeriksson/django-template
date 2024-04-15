@@ -27,7 +27,7 @@ django-crispy-forms==1.14.0
     # via -r requirements.in
 django-debug-toolbar==3.4.0
     # via -r requirements.in
-idna==3.6
+idna==3.7
     # via requests
 oauthlib==3.2.2
     # via requests-oauthlib
@@ -46,7 +46,7 @@ requests==2.31.0
     #   requests-oauthlib
 requests-oauthlib==2.0.0
     # via django-allauth
-sqlparse==0.4.4
+sqlparse==0.5.0
     # via
     #   django
     #   django-debug-toolbar
