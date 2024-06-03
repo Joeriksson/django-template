@@ -6,7 +6,7 @@
 #
 asgiref==3.8.1
     # via django
-certifi==2024.2.2
+certifi==2024.6.2
     # via requests
 cffi==1.16.0
     # via cryptography
@@ -39,7 +39,7 @@ pyjwt[crypto]==2.8.0
     # via django-allauth
 python3-openid==3.2.0
     # via django-allauth
-requests==2.31.0
+requests==2.32.2
     # via
     #   -r requirements.in
     #   django-allauth
@@ -50,7 +50,7 @@ sqlparse==0.5.0
     # via
     #   django
     #   django-debug-toolbar
-typing-extensions==4.11.0
+typing-extensions==4.12.1
     # via asgiref
 urllib3==2.2.1
     # via requests
