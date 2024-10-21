@@ -23,7 +23,7 @@ django-debug-toolbar==3.4.0
     # via -r requirements.in
 idna==3.10
     # via requests
-psycopg2-binary==2.9.9
+psycopg2-binary==2.9.10
     # via -r requirements.in
 requests==2.32.2
     # via -r requirements.in
