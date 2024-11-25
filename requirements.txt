@@ -27,7 +27,7 @@ psycopg2-binary==2.9.10
     # via -r requirements.in
 requests==2.32.2
     # via -r requirements.in
-sqlparse==0.5.1
+sqlparse==0.5.2
     # via
     #   django
     #   django-debug-toolbar
