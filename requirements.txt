@@ -6,7 +6,7 @@
 #
 asgiref==3.8.1
     # via django
-certifi==2024.8.30
+certifi==2024.12.14
     # via requests
 charset-normalizer==3.4.0
     # via requests
@@ -27,7 +27,7 @@ psycopg2-binary==2.9.10
     # via -r requirements.in
 requests==2.32.2
     # via -r requirements.in
-sqlparse==0.5.2
+sqlparse==0.5.3
     # via
     #   django
     #   django-debug-toolbar
