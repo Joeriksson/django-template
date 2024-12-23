@@ -33,5 +33,5 @@ sqlparse==0.5.3
     #   django-debug-toolbar
 typing-extensions==4.12.2
     # via asgiref
-urllib3==2.2.3
+urllib3==2.3.0
     # via requests
