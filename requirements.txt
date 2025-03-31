@@ -33,7 +33,7 @@ sqlparse==0.5.3
     # via
     #   django
     #   django-debug-toolbar
-typing-extensions==4.12.2
+typing-extensions==4.13.0
     # via asgiref
 urllib3==2.3.0
     # via requests
