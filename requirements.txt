@@ -8,11 +8,11 @@ asgiref==3.8.1
     # via
     #   django
     #   django-allauth
-certifi==2025.4.26
+certifi==2025.6.15
     # via requests
 charset-normalizer==3.4.2
     # via requests
-django==4.2.22
+django==4.2.23
     # via
     #   -r requirements.in
     #   django-allauth
