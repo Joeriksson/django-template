@@ -10,7 +10,7 @@ asgiref==3.10.0
     #   django-allauth
 certifi==2025.10.5
     # via requests
-charset-normalizer==3.4.3
+charset-normalizer==3.4.4
     # via requests
 django==4.2.25
     # via
