@@ -31,7 +31,7 @@ jobs:
       - name: Upgrade Python dependencies
         # ADD YOUR CUSTOM DEPENDENCY UPGRADE COMMANDS BELOW
         run: |
-          pip install -U pip pip-tools
+          pip install -U "pip<25" pip-tools
           pip-compile --upgrade -o requirements.txt requirements.in
       # END PYTHON DEPENDENCIES
 
