@@ -32,14 +32,15 @@ The setting file are split up in production and a development settings files. Al
 
 2. Install [Docker Desktop](https://www.docker.com/products/docker-desktop) to be able to use the docker environment.
 
-3. Create an .env file in the root folder with the the following parameters:
+3. Create your `.env` from the example file in the project root:
 
-    ```ENVIRONMENT='development'
-    SENDGRID_PASSWORD=<you sendgrid password>
-    SENDGRID_USERNAME=<your sendgrid username>
-    SECRET_KEY=<your secret key>
-    DEBUG=True
-    ```
+    `cp .example.env .env`
+
+    Then edit `.env` with your own values for:
+
+    - `SENDGRID_PASSWORD`
+    - `SENDGRID_USERNAME`
+    - `SECRET_KEY`
 
 4. In the directory where you cloned the repository, run the following command:
 
