@@ -1,5 +1,0 @@
-requirements:
-  - requirements.in:
-      update: insecure
-      
-search: False

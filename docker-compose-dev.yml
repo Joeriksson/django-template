@@ -1,13 +1,12 @@
-version: '3.7'
-
 services:
   web:
     env_file:
       - .env
     build: .
-    command: python /code/manage.py runserver 0.0.0.0:8000 --settings=core.settings.development
+    command: /bin/sh -c "uv sync --frozen --no-install-project && python /code/manage.py runserver 0.0.0.0:8000 --settings=core.settings.development"
     volumes:
       - .:/code
+      - /code/.venv
     ports:
       - 8000:8000
     depends_on:

@@ -63,4 +63,27 @@ If you want to stop the container run:
 
   `make dev_down`
 
+## Local Python environment with uv
 
+If you want to run the app locally without Docker:
+
+1. Install `uv` from [astral.sh/uv](https://docs.astral.sh/uv/).
+2. Sync dependencies:
+   `uv sync --frozen --no-install-project`
+3. Run commands through uv:
+   `uv run python manage.py migrate`
+   `uv run python manage.py runserver`
+
+## Run GitHub Actions locally with act
+
+If you want to test the CI workflow locally:
+
+1. Install [`act`](https://nektosact.com/installation/).
+2. Make sure Docker is running.
+3. Run one workflow matrix entry at a time:
+   `make act_ci_310`
+   `make act_ci_311`
+   `make act_ci_312`
+
+You can also run all local matrix checks sequentially:
+`make act_ci_all`

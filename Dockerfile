@@ -1,5 +1,6 @@
 # Pull base image
 FROM python:3.10-slim
+COPY --from=ghcr.io/astral-sh/uv:0.10.2 /uv /uvx /bin/
 
 # Set env vars
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -9,11 +10,10 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /code
 
 # Install dependencies
-#COPY Pipfile Pipfile.lock /code/
-#RUN pip install pipenv && pipenv install --system
-COPY requirements.txt /code/
-RUN python -m pip install --upgrade pip
-RUN python -m pip install -r requirements.txt
+COPY pyproject.toml uv.lock /code/
+RUN uv sync --frozen --no-install-project
 
 # Copy core
 COPY . /code/
+
+ENV PATH="/code/.venv/bin:$PATH"

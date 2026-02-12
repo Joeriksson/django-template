@@ -1,0 +1,17 @@
+[project]
+name = "django-template"
+version = "0.1.0"
+description = "A Django project template."
+readme = "Readme.md"
+requires-python = ">=3.9"
+dependencies = [
+    "django~=4.2.3",
+    "django-allauth>=65.13.0",
+    "django-crispy-forms~=1.14.0",
+    "django-debug-toolbar~=3.4.0",
+    "psycopg2-binary~=2.9.4",
+    "requests==2.32.4",
+]
+
+[tool.uv]
+package = false

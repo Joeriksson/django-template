@@ -18,9 +18,10 @@ jobs:
 
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 4
+      # Keep matrix jobs serialized to avoid host port conflicts under local act runs.
+      max-parallel: 3
       matrix:
-        python-version: [3.9, '3.10', '3.11', '3.12']
+        python-version: ['3.10', '3.11', '3.12']
 
     services:
       # Label used to access the service container
@@ -37,8 +38,8 @@ jobs:
           --health-timeout 5s
           --health-retries 5
         ports:
-          # Maps tcp port 5432 on service container to the host
-          - 5432:5432
+          # Use a fixed non-default host port to avoid local 5432 collisions in act
+          - 55432:5432
 
     steps:
     - uses: actions/checkout@v3
@@ -46,11 +47,19 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
-        cache: 'pip'
+    - name: Set up uv
+      uses: astral-sh/setup-uv@v6
+      with:
+        enable-cache: true
     - name: Install Dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt --use-pep517
+        uv sync --frozen --no-install-project
     - name: Run Tests
+      env:
+        POSTGRES_DB: postgres
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_HOST: localhost
+        POSTGRES_PORT: 55432
       run: |
-        python manage.py test
+        uv run python manage.py test

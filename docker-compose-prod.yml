@@ -1,15 +1,14 @@
-version: '3.7'
-
 services:
   web:
     env_file:
       - .env
     build: .
-    command: python /code/manage.py runserver 0.0.0.0:8000 --settings=core.settings.production
+    command: /bin/sh -c "uv sync --frozen --no-install-project && python /code/manage.py runserver 0.0.0.0:8000 --settings=core.settings.production"
     # In publicly hosted production use gunicorn
     # command: gunicorn core.wsgi -b 0.0.0.0:8000
     volumes:
       - .:/code
+      - /code/.venv
     ports:
       - 8000:8000
     depends_on:
