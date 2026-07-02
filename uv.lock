@@ -170,8 +170,8 @@ resolution-markers = [
     "python_full_version < '3.10'",
 ]
 dependencies = [
-    { name = "asgiref", marker = "python_full_version < '3.10'" },
-    { name = "django", marker = "python_full_version < '3.10'" },
+    { name = "asgiref" },
+    { name = "django" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/f0/fc/d36b857ff3e367dc9d09af41d908c0f3c26688e6078ace26a1f29339f860/django_allauth-65.14.3.tar.gz", hash = "sha256:548eef76ab85f6e48f46f98437abf22acf0e834f73e9915fb6cc3f31a0dcdf4d", size = 2029142, upload-time = "2026-02-13T18:40:52.441Z" }
 wheels = [
@@ -186,8 +186,8 @@ resolution-markers = [
     "python_full_version >= '3.10'",
 ]
 dependencies = [
-    { name = "asgiref", marker = "python_full_version >= '3.10'" },
-    { name = "django", marker = "python_full_version >= '3.10'" },
+    { name = "asgiref" },
+    { name = "django" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/d7/10/2d33c5bc3c0f9d7db1276a1babcaadd147e73eb416ccb1bd9523c6ac925f/django_allauth-65.18.0.tar.gz", hash = "sha256:afb82e2c545b9a5539370ad120468faaed84715e095a7b6e76972dacdc6376fe", size = 2246988, upload-time = "2026-05-29T13:01:26.071Z" }
 wheels = [
